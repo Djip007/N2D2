@@ -85,6 +85,10 @@ public:
                                        const std::string& outputSizeName,
                                        std::ofstream& prog,
                                        bool isUnsigned = false) = 0;
+    // qq outils
+    static void generateHeaderBegin(const Cell& cell, std::ofstream& header);
+    static void generateHeaderEnd(const Cell& cell, std::ofstream& header);
+
 };
 }
 
